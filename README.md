@@ -15,6 +15,21 @@ pip install qiskit_nature
 ```
 
 
+## Used package version
+
+```
+	'Python':	'3.9.7'
+	'qiskit-terra': '0.21.0'
+	'qiskit-aer': '0.10.4'
+	'qiskit-ignis': None
+	'qiskit-ibmq-provider': '0.19.2'
+	'qiskit': '0.37.0'
+	'qiskit-nature': '0.4.2'
+	'qiskit-finance': None
+	'qiskit-optimization': None
+	'qiskit-machine-learning': None
+```
+
 
 
 
