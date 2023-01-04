@@ -16,8 +16,8 @@ class ExpMole:
     self.total_energy = total_energy
     self.rep_energy = repulsion_energy
     self.HF_energy = HF_energy
-    self.total_wcrep = self.total_energy - self.rep_energy
-    self.HF_wcrep = self.HF_energy - self.rep_energy
+    self.total_wcrep = self.total_energy - self.rep_energy # total energy without repulsion energy
+    self.HF_wcrep = self.HF_energy - self.rep_energy # HF energy without repulsion energy
     ## Particals and Orbitals
     self.norb= num_spin_orbitals
     self.nptc = num_particles # (num alpha particles, num beta particles)
@@ -32,7 +32,7 @@ class ExpMole:
     self.ham_op = QUBIT_CONVERTER.convert(self.ham_fm, num_particles=self.nptc)
 
 ## Molecule informations: energies, number of orbitals, number of alpha and beta electrons, Hamiltonian
-data_folder ='Data/'  ## <-- NOTE: becareful with this data folder in case anything changes
+data_folder ='./Example_Data/'  ## <-- NOTE: becareful with this data folder in case anything changes
 H4_MAPPING = {
         '0': '0',
         '1': '1',
