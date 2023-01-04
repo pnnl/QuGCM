@@ -1,2 +1,3 @@
 *.pyc
 .ipynb_checkpoints/*
+Data_in_paper/.ipynb_checkpoints/*
