@@ -1,3 +1,7 @@
+
+Major Update Preview (Sept 05, 2023): This repo will get a major update soon to greatly speedup the computation from software level. The code for the paper will be put into a indepdent folder in this repo.
+
+
 # Quantum Generator Coordinated Method (QuGCM)
 
 Code and data for [paper](https://arxiv.org/abs/2212.09205)
