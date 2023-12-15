@@ -30,7 +30,7 @@ pyscf==2.3.0
 
 To have an accurate and dirct comparison, we use the following files from [ADAPT-VQE repository](https://github.com/mayhallgroup/adapt-vqe/tree/master/src)
 * `pyscf_helper.py` to create the Hamiltonian from the geometry
-* `operator_pools.py` to generate ansatz pool (as discussed in [ADAPT-GCM paper](https://arxiv.org/abs/2312.07691)
+* `operator_pools.py` to generate ansatz pool (as discussed in [ADAPT-GCM paper](https://arxiv.org/abs/2312.07691))
 
 
 Due to upgrades in `openfermion`, `get_sparse_operator()` is not in `openfermion.linalg`. For `operator_pools.py`, please add the following at the top
