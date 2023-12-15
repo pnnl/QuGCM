@@ -1,9 +1,9 @@
 # ADAPT-GCM
 
-Code and data for the [ADAPT-GCM paper](https://arxiv.org/abs/2312.07691). We use the certain files from [ADAPT-VQE repository](https://github.com/mayhallgroup/adapt-vqe/tree/master/src) to construct the Hamiltonian and ansatz pool (and the VQE gradient computation provided in the same file) so that the performance comparison in the paper is straightforward and without doubts.
+Code and data for the [ADAPT-GCM paper](https://arxiv.org/abs/2312.07691). We use the certain files from the [original ADAPT-VQE repository](https://github.com/mayhallgroup/adapt-vqe/tree/master/src) to construct the Hamiltonian and ansatz pool (and the VQE gradient computation provided in the same file) so that the performance comparison in the paper is straightforward and without doubts.
 
 ## Files and folders in this path
-* `Paper_Data` folder: The folder contains all data for the [ADAPT-GCM paper](https://arxiv.org/abs/2312.07691). See another README inside for details.
+* `Paper_Data` folder: The folder contains all data for the [ADAPT-GCM paper](https://arxiv.org/abs/2312.07691). See the README inside for details.
 * `ADAPT_GCM_Tutorial.ipynb`: The step-by-step tutorial for ADAPT-GCM and quantum resource estimation with a LiH example.
 * `environment.yml`: The files that contains all my packages installed in our Anaconda environment. The essential ones are listed in the next section
 * `adapt_gcm.py`: The key files that run ADAPT-GCM.
@@ -38,7 +38,7 @@ Due to upgrades in `openfermion`, `get_sparse_operator()` is not in `openfermion
 import openfermion.linalg as transforms 
 ```
 
-Due to upgrades in `pyscf`, `molden` is not in `pyscf` directly. In line 3 in `pyscf_helper.py`, please remove the import of `molden` and add the following at the top
+Due to upgrades in `pyscf`, `molden` is not in `pyscf` directly. In line 3 of `pyscf_helper.py`, please remove the import of `molden` and add the following at the top
 ```
 from pyscf.tools import molden
 ```
