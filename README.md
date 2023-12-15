@@ -1,39 +1,9 @@
+# Folder "QuGCM" for Quantum Generator Coordinated Method (QuGCM)
 
-Major Update Preview (Sept 05, 2023): This repo will get a major update soon to greatly speedup the computation from software level. The code for the paper will be put into a indepdent folder in this repo.
+Code and data for [QuGCM paper](https://journals.aps.org/prresearch/abstract/10.1103/PhysRevResearch.5.023200)
 
+It is better to directly go to the folder below, unless the interest is on the orginal data of the paper.
 
-# Quantum Generator Coordinated Method (QuGCM)
+# Folder "ADAPT-CGM" for ADAPT-GCM
 
-Code and data for [paper](https://arxiv.org/abs/2212.09205)
-
- * `Demo.ipynb` shows the whole computational process to obtain the lowest energy
- 
- * `Data_in_paper/Explanation.ipynb` shows the generation and usage of the raw data in paper
-
-
-## Prerequisite
-
-```text
-pip install qiskit
-pip install qiskit_nature
-```
-
-
-## Used package version
-
-```
-	'Python':	'3.9.7'
-	'qiskit-terra': '0.21.0'
-	'qiskit-aer': '0.10.4'
-	'qiskit-ignis': None
-	'qiskit-ibmq-provider': '0.19.2'
-	'qiskit': '0.37.0'
-	'qiskit-nature': '0.4.2'
-	'qiskit-finance': None
-	'qiskit-optimization': None
-	'qiskit-machine-learning': None
-```
-
-
-
-
+Code for reproducing experiments and data for the ADAPT-GCM part of the [ADAPT-GCM paper](https://arxiv.org/abs/2312.07691). So it does not include ADAPT-VQE-GCM. It requires several python files (not need to install) to in the [ADAPT-VQE repo](https://github.com/mayhallgroup/adapt-vqe) and little modifications. An detailed instructions are included in the folder.

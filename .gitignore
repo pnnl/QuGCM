@@ -1,3 +1,5 @@
-*.pyc
-.ipynb_checkpoints/*
-Data_in_paper/.ipynb_checkpoints/*
+.DS_Store
+.ipynb_checkpoints
+__pycache__
+orbitals_canon.molden
+full.molden
