@@ -10,12 +10,12 @@ In `IterMats`, projected Hamiltonian matrix H and overlap matrix S are recored. 
 ### Outside of folder `IterMats`
 
 General
-* `printout.txt` gives all printout in ADAPT-VQE along with ADAPT-VQE-GCM and ADAPT-VQE-GCM(1)
+* `printout.txt` gives all printout in ADAPT-VQE along with ADAPT-VQE-GCM and ADAPT-VQE-GCM(1). NOTE: due to the change of the implementation of the custom eigensolver, the eigenvalues from GCM in this file are not accurate. For the accurate values, please use `GCM_DIFFS_EIGRECON.npy`.
 * `optimized_coeffs.npy` stores the optimal parameters from ADAPT-VQE after convergence (also partially used by ADAPT-GCM, as described in paper)
 * `selected_indices.npy` stores the index of selected ansatzes based on VQE gradients, need to pair with spin-adapted pool, i.e., the pool from code `operator_pools.singlet_GSD()` in `ADAPT_GCM_Tutorial.ipynb`
 
 ADAPT-VQE-GCM Part
-* `GCM_DIFFS.npy` stores the errors of estimated ground-state energies in all iterations by ADAPT-VQE-GCM
+* `GCM_DIFFS_EIGRECON.npy` stores the errors of estimated ground-state energies in all iterations by ADAPT-VQE-GCM
 * `GCM_OneShot.npy` records the eigenvalue from the final one-shot GCM (i.e., ADAPT-VQE-GCM(1) in paper)
 * `GCM_OneShotDiff.npy` stores the error of estimated ground-state energy by ADAPT-VQE-GCM(1)
 * `GCM_SIZE.npy` gives the size of bases in all iterations by ADAPT-VQE-GCM

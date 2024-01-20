@@ -33,9 +33,9 @@ To have an accurate and dirct comparison, we use the following files from [ADAPT
 * `operator_pools.py` to generate ansatz pool (as discussed in [ADAPT-GCM paper](https://arxiv.org/abs/2312.07691))
 
 
-Due to upgrades in `openfermion`, `get_sparse_operator()` is not in `openfermion.linalg`. For `operator_pools.py`, please add the following at the top
+Due to upgrades in `openfermion`, `get_sparse_operator()` is not in `openfermion.transforms`. For `operator_pools.py`, at line 48, please replace `transforms.get_sparse_operator` to 
 ```
-import openfermion.linalg as transforms 
+linalg.get_sparse_operator
 ```
 
 Due to upgrades in `pyscf`, `molden` is not in `pyscf` directly. In line 3 of `pyscf_helper.py`, please remove the import of `molden` and add the following at the top

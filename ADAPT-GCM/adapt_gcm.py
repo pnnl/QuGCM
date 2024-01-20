@@ -10,39 +10,35 @@ from openfermion import *
 
 
 ## ------------------- Eigenvalue computation while solving the numerical issues Starts -----------------------
-def gcm_eig_helper(Hmat, Smat, eps):
+def gcm_eig_helper(Hmat, Smat):
     try:
-        sI = eps*np.identity(Smat.shape[0])
-        evs = np.sort(scipy.linalg.eigh(Hmat, Smat+sI)[0]) # Use eig instead of eigh
-        return evs, True
+        evals_def = sl.eigh(Hmat, Smat)[0]
+        return evals_def, True
     except:
         return None, False
-    
-def gcm_eig(Hmat, Smat, lb):
-    # To deal with instability, the returned lowerest eigevalue will choose
-    # the one that within [lb,ub]
-    # lb is usually some constant mius the eigvalue from the last iteration
-    shifted = 0
-    try:
-        evs = np.sort(scipy.linalg.eigh(Hmat, Smat)[0])
-    except:
-        # try to find a smallest disturbance
-        eps = 0
-        solvable_flag = False
-        while not solvable_flag:
-            eps += 1e-17
-            evs, solvable_flag = gcm_eig_helper(Hmat, Smat, eps)
 
-    # If the lowest eigenvalue is not too small due to instablity
-    while evs[shifted] <= lb:
-        if shifted + 1 < len(evs):
-            shifted += 1
-        else:
-            print(" No suitable eigenvalues to return")
-            shifted = 0
-            break
-    evs = evs[shifted:]
-    return evs
+def gcm_eig(H_indef, S_indef, ev_thresh=1e-15, printout=True):
+    evals, evecs = sl.eig(S_indef)
+    # sort from largest to smallest
+    idx = evals.argsort()[::-1]   
+    evals = evals[idx]
+    evecs = evecs[:,idx]
+
+    solvable_flag = False
+    curr_thresh = ev_thresh
+    while not solvable_flag:
+        num_pos_eigs = np.sum(np.abs(evals) > curr_thresh)
+        evecs_trunc = evecs[:,:num_pos_eigs]
+        evecs_trunc = np.matrix(evecs_trunc)
+        S_def = evecs_trunc.H.dot(S_indef).dot(evecs_trunc)
+        H_def = evecs_trunc.H.dot(H_indef).dot(evecs_trunc)
+        #
+        evals_def, solvable_flag = gcm_eig_helper(H_def,S_def)
+        if not solvable_flag:
+            curr_thresh += ev_thresh
+    if printout:
+        print("   Eigensolver: dimension reduced from {:d} to {:d}, with eigval > {:.3e}".format(len(evals), num_pos_eigs, curr_thresh))
+    return evals_def
 
 
 
@@ -369,7 +365,7 @@ def adapt_gcm(ham_op, ansatz_pool, HF_state, theta,
                                                         constant_t=theta,
                                                         prev_basis = prodBasis_set, make_orth = make_orth)
             if not make_orth:
-                osgcm_resultP = gcm_eig(osgcmHP, osgcmSP, true_lowest_ev-0.001)
+                osgcm_resultP = gcm_eig(osgcmHP, osgcmSP, ev_thresh=1e-14, printout=True)
             else:
                 osgcm_resultP = sl.eigh(osgcmHP)[0]
             print(" Number of ansatzes: ", len(ansatz_ops))
@@ -427,7 +423,7 @@ def adapt_gcm(ham_op, ansatz_pool, HF_state, theta,
                 np.save(file_prefix+'IterAG{:d}_bases.npy'.format(n_iter), np.array(ansatz_mat))
                 np.save(file_prefix+'IterAG{:d}_preop_coeffs.npy'.format(n_iter), np.array(parameters))
         if not make_orth:
-            GCM_RESULT = gcm_eig(gcmH, gcmS, true_lowest_ev-0.001)
+            GCM_RESULT = gcm_eig(gcmH, gcmS, ev_thresh=1e-14, printout=True)
         else:
             GCM_RESULT = sl.eigh(gcmH)[0]
         ev_records.append(GCM_RESULT[0])
