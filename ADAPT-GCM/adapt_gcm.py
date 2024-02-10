@@ -305,6 +305,8 @@ def adapt_gcm(ham_op, ansatz_pool, HF_state, theta,
     ev_records = [0]    # Record lowest eigenvalues in every ADAPT iteration
     GCM_BASIS_SIZE = [] # Record number of bases in every ADAPT iteration
     prodBasis_set = []  # A set to record product bases in all previous iterations
+    osgcm_resultP = [None] # Eigenvalues from One-shot GCM with only +pi/4 coefficient
+    osgcm_diffP = None     # Error of one-shot GCM
 
     vqe_curr_vec = HF_state.copy()
     flat_ref_ket = HF_state.toarray().flatten()
