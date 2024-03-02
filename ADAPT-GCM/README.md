@@ -1,6 +1,6 @@
 # ADAPT-GCM
 
-Code and data for the [ADAPT-GCM paper](https://arxiv.org/abs/2312.07691). We use the certain files from the [original ADAPT-VQE repository](https://github.com/mayhallgroup/adapt-vqe/tree/master/src) to construct the Hamiltonian and ansatz pool (and the VQE gradient computation provided in the same file) so that the performance comparison in the paper is straightforward and without doubts.
+Code and data for the [ADAPT-GCM paper](https://arxiv.org/abs/2312.07691). We use the certain files from the [original ADAPT-VQE repository](https://github.com/mayhallgroup/adapt-vqe/tree/master/src) to construct the Hamiltonian and ansatz pool (and the VQE gradient computation provided in the same file) so that the performance comparison in the paper is straightforward and without doubts. We highly appreciate the accessibility of the source code of ADAPT-VQE. 
 
 ## Files and folders in this path
 * `Paper_Data` folder: The folder contains all data for the [ADAPT-GCM paper](https://arxiv.org/abs/2312.07691). See the README inside for details.
