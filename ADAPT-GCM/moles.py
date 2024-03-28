@@ -81,16 +81,16 @@ class VQEMole():
 #         self.mol_name_pic = 'H4 α=0.500'
 
 
-# class H4L5(VQEMole):
-#     def __init__(self):
-#         # H4 H-H=5.0 Ang
-#         self.geometry = [('H', (0,0,0)), 
-#                     ('H', (5,0,0)), 
-#                     ('H', (10,0,0)), 
-#                     ('H', (15,0,0))] # Muqing: H4L
-#         self.mol_unit = 'Angstrom'
-#         self.mol_name = 'H4L5'
-#         self.mol_name_pic = 'H4 H-H=5.0 Ang'
+class H4L5(VQEMole):
+    def __init__(self):
+        # H4 H-H=5.0 Ang
+        self.geometry = [('H', (0,0,0)), 
+                    ('H', (5,0,0)), 
+                    ('H', (10,0,0)), 
+                    ('H', (15,0,0))] # Muqing: H4L
+        # self.mol_unit = 'Angstrom'
+        self.mol_name = 'H4L5'
+        self.mol_name_pic = 'H4 H-H=5.0 Ang'
 
 class LiH(VQEMole):
     def __init__(self):
