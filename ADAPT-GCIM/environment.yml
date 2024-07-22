@@ -1,0 +1,12 @@
+name: gcimtest
+channels:
+  - defaults
+dependencies:
+  - python == 3.11
+  - pip:
+    - qiskit==0.45.0
+    - qiskit-algorithms==0.2.1
+    - openfermion==1.5.1
+    - openfermionpsi4==0.5
+    - pyscf==2.6.2
+    - ipykernel

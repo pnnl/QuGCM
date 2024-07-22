@@ -1,0 +1,371 @@
+This is a modified operator_pools.py by Muqing Zheng
+This is a modified vqe_methods.py by Muqing Zheng
+This is a modified pyscf_helper.py by Muqing Zheng
+ ---------------------------------------------------------
+                                                          
+                      Using Pyscf:
+                                                          
+ ---------------------------------------------------------
+                                                          
+Choosing unit B
+converged SCF energy = -1.79158550783361
+
+System and Method:
+[('H', (0, 0, 0)), ('H', (0.03141463462364135, 1.9997532649633212, 0)), ('H', (2.0314146346236415, 1.9997532649633212, 0)), ('H', (2.0628292692472825, 0, 0))]
+Basis set                                      :      sto-3g
+Number of Orbitals                             :         4
+Number of electrons                            :         4
+Nuclear Repulsion                              :    2.6863890759 
+Electronic SCF energy                          :   -4.4779745837 
+SCF Energy                                     :   -1.7915855078
+ AO->MO
+ NElectrons:    2    2
+ ecore:   0.00000000
+ ERIs in the active-space:
+(4, 4, 4, 4)    0.00204800 Mb
+ n_orb:    4
+ n_a  :    2
+ n_b  :    2
+ HF Energy:  -1.79158551
+ Build reference state with    2 alpha and    2 beta electrons [0, 2, 1, 3]
+ State    0:  -1.94299341 au  <S2>:   0.00000000
+ Form singlet GSD operators
+ Number of operators:  66
+ Reference Energy:  -1.79158551
+ Generate Sparse Matrices for operators in pool
+ Start ADAPT-VQE algorithm
+ Now start to grow the ansatz
+
+
+
+
+ --------------------------------------------------------------------------
+                         ADAPT-VQE iteration:  0
+ --------------------------------------------------------------------------
+ Check each new operator for coupling
+ Measure Operator Pool Gradients:
+ Variance:      0.10749108
+ Norm of <[H,A]> =   0.46366169
+ Max  of <[H,A]> =  -0.30262225
+ Add operator   26
+
+--------- GCM Computation Start ---------
+Orthogonalization:  False
+Number of saved prod bases 0 H matrix size (3, 3)
+   Eigensolver: dimension reduced from 3 to 3, with eigval > 1.000e-14
+--------- GCM Computation Over  ---------
+
+ Number of optimization iteration:  4
+ VQE Finished:      -1.826056232460
+ GCM Finished:      -1.826086439756
+ VQE error 1.169372e-01
+ GCM error 1.169070e-01
+
+
+
+
+ --------------------------------------------------------------------------
+                         ADAPT-VQE iteration:  1
+ --------------------------------------------------------------------------
+ Check each new operator for coupling
+ Measure Operator Pool Gradients:
+ Variance:      0.08390420
+ Norm of <[H,A]> =   0.39897318
+ Max  of <[H,A]> =   0.23335805
+ Add operator   52
+
+--------- GCM Computation Start ---------
+Orthogonalization:  False
+Passing out extra product bases and no orthgonalization
+Number of saved prod bases 2 H matrix size (7, 7)
+   Eigensolver: dimension reduced from 7 to 5, with eigval > 1.000e-14
+--------- GCM Computation Over  ---------
+
+ Number of optimization iteration:  6
+ VQE Finished:      -1.848727854162
+ GCM Finished:      -1.873455839630
+ VQE error 9.426556e-02
+ GCM error 6.953757e-02
+
+
+
+
+ --------------------------------------------------------------------------
+                         ADAPT-VQE iteration:  2
+ --------------------------------------------------------------------------
+ Check each new operator for coupling
+ Measure Operator Pool Gradients:
+ Variance:      0.04515145
+ Norm of <[H,A]> =   0.29685878
+ Max  of <[H,A]> =   0.22461522
+ Add operator   12
+
+--------- GCM Computation Start ---------
+Orthogonalization:  False
+Passing out extra product bases and no orthgonalization
+Number of saved prod bases 4 H matrix size (11, 11)
+   Eigensolver: dimension reduced from 11 to 5, with eigval > 1.000e-14
+--------- GCM Computation Over  ---------
+
+ Number of optimization iteration:  7
+ VQE Finished:      -1.873455805971
+ GCM Finished:      -1.873455839630
+ VQE error 6.953760e-02
+ GCM error 6.953757e-02
+
+
+
+
+ --------------------------------------------------------------------------
+                         ADAPT-VQE iteration:  3
+ --------------------------------------------------------------------------
+ Check each new operator for coupling
+ Measure Operator Pool Gradients:
+ Variance:      0.01111763
+ Norm of <[H,A]> =   0.13818809
+ Max  of <[H,A]> =   0.09799974
+ Add operator   50
+
+--------- GCM Computation Start ---------
+Orthogonalization:  False
+Passing out extra product bases and no orthgonalization
+Number of saved prod bases 6 H matrix size (15, 15)
+   Eigensolver: dimension reduced from 15 to 7, with eigval > 1.000e-14
+--------- GCM Computation Over  ---------
+
+ Number of optimization iteration:  11
+ VQE Finished:      -1.921546669937
+ GCM Finished:      -1.930257623059
+ VQE error 2.144674e-02
+ GCM error 1.273579e-02
+
+
+
+
+ --------------------------------------------------------------------------
+                         ADAPT-VQE iteration:  4
+ --------------------------------------------------------------------------
+ Check each new operator for coupling
+ Measure Operator Pool Gradients:
+ Variance:      0.02860058
+ Norm of <[H,A]> =   0.23552477
+ Max  of <[H,A]> =   0.17965104
+ Add operator   14
+
+--------- GCM Computation Start ---------
+Orthogonalization:  False
+Passing out extra product bases and no orthgonalization
+Number of saved prod bases 8 H matrix size (19, 19)
+   Eigensolver: dimension reduced from 19 to 7, with eigval > 1.000e-14
+--------- GCM Computation Over  ---------
+
+ Number of optimization iteration:  11
+ VQE Finished:      -1.930012614222
+ GCM Finished:      -1.930257623059
+ VQE error 1.298080e-02
+ GCM error 1.273579e-02
+
+
+
+
+ --------------------------------------------------------------------------
+                         ADAPT-VQE iteration:  5
+ --------------------------------------------------------------------------
+ Check each new operator for coupling
+ Measure Operator Pool Gradients:
+ Variance:      0.01447179
+ Norm of <[H,A]> =   0.15098554
+ Max  of <[H,A]> =  -0.12210407
+ Add operator   25
+
+--------- GCM Computation Start ---------
+Orthogonalization:  False
+Passing out extra product bases and no orthgonalization
+Number of saved prod bases 10 H matrix size (23, 23)
+   Eigensolver: dimension reduced from 23 to 8, with eigval > 1.000e-14
+--------- GCM Computation Over  ---------
+
+ Number of optimization iteration:  11
+ VQE Finished:      -1.942085742699
+ GCM Finished:      -1.942981302161
+ VQE error 9.076679e-04
+ GCM error 1.210849e-05
+
+
+
+
+ --------------------------------------------------------------------------
+                         ADAPT-VQE iteration:  6
+ --------------------------------------------------------------------------
+ Check each new operator for coupling
+ Measure Operator Pool Gradients:
+ Variance:      0.00184083
+ Norm of <[H,A]> =   0.01639886
+ Max  of <[H,A]> =  -0.01299399
+ Add operator   34
+
+--------- GCM Computation Start ---------
+Orthogonalization:  False
+Passing out extra product bases and no orthgonalization
+Number of saved prod bases 12 H matrix size (27, 27)
+   Eigensolver: dimension reduced from 27 to 8, with eigval > 1.000e-14
+--------- GCM Computation Over  ---------
+
+ Number of optimization iteration:  16
+ VQE Finished:      -1.942981302161
+ GCM Finished:      -1.942981302161
+ VQE error 1.210849e-05
+ GCM error 1.210849e-05
+
+
+
+
+ --------------------------------------------------------------------------
+                         ADAPT-VQE iteration:  7
+ --------------------------------------------------------------------------
+ Check each new operator for coupling
+ Measure Operator Pool Gradients:
+ Variance:      0.00000950
+ Norm of <[H,A]> =   0.00534303
+ Max  of <[H,A]> =  -0.00258447
+ Add operator   20
+
+--------- GCM Computation Start ---------
+Orthogonalization:  False
+Passing out extra product bases and no orthgonalization
+Number of saved prod bases 14 H matrix size (31, 31)
+   Eigensolver: dimension reduced from 31 to 10, with eigval > 1.000e-14
+--------- GCM Computation Over  ---------
+
+ Number of optimization iteration:  17
+ VQE Finished:      -1.942986084891
+ GCM Finished:      -1.942992436213
+ VQE error 7.325758e-06
+ GCM error 9.744355e-07
+
+
+
+
+ --------------------------------------------------------------------------
+                         ADAPT-VQE iteration:  8
+ --------------------------------------------------------------------------
+ Check each new operator for coupling
+ Measure Operator Pool Gradients:
+ Variance:      0.00000717
+ Norm of <[H,A]> =   0.00479302
+ Max  of <[H,A]> =   0.00261572
+ Add operator   17
+
+--------- GCM Computation Start ---------
+Orthogonalization:  False
+Passing out extra product bases and no orthgonalization
+Number of saved prod bases 16 H matrix size (35, 35)
+   Eigensolver: dimension reduced from 35 to 12, with eigval > 1.000e-14
+--------- GCM Computation Over  ---------
+
+ Number of optimization iteration:  19
+ VQE Finished:      -1.942991600294
+ GCM Finished:      -1.942993410649
+ VQE error 1.810354e-06
+ GCM error 2.220446e-15
+
+
+
+
+ --------------------------------------------------------------------------
+                         ADAPT-VQE iteration:  9
+ --------------------------------------------------------------------------
+ Check each new operator for coupling
+ Measure Operator Pool Gradients:
+ Variance:      0.00000307
+ Norm of <[H,A]> =   0.00163427
+ Max  of <[H,A]> =   0.00109607
+ Add operator   11
+
+--------- GCM Computation Start ---------
+Orthogonalization:  False
+Passing out extra product bases and no orthgonalization
+Number of saved prod bases 18 H matrix size (39, 39)
+   Eigensolver: dimension reduced from 39 to 12, with eigval > 1.000e-14
+--------- GCM Computation Over  ---------
+
+ Number of optimization iteration:  18
+ VQE Finished:      -1.942992450501
+ GCM Finished:      -1.942993410649
+ VQE error 9.601480e-07
+ GCM error 1.776357e-15
+
+
+
+
+ --------------------------------------------------------------------------
+                         ADAPT-VQE iteration:  10
+ --------------------------------------------------------------------------
+ Check each new operator for coupling
+ Measure Operator Pool Gradients:
+ Variance:      0.00000176
+ Norm of <[H,A]> =   0.00133353
+ Max  of <[H,A]> =  -0.00118265
+ Add operator   38
+
+--------- GCM Computation Start ---------
+Orthogonalization:  False
+Passing out extra product bases and no orthgonalization
+Number of saved prod bases 20 H matrix size (43, 43)
+   Eigensolver: dimension reduced from 43 to 12, with eigval > 1.000e-14
+--------- GCM Computation Over  ---------
+
+ Number of optimization iteration:  16
+ VQE Finished:      -1.942993410649
+ GCM Finished:      -1.942993410649
+ VQE error 4.884981e-15
+ GCM error 1.332268e-15
+
+
+
+
+ --------------------------------------------------------------------------
+                         ADAPT-VQE iteration:  11
+ --------------------------------------------------------------------------
+ Check each new operator for coupling
+ Measure Operator Pool Gradients:
+ Variance:      0.00000000
+ Norm of <[H,A]> =   0.00000005
+ Max  of <[H,A]> =  -0.00000003
+Orthogonalization:  False
+Orthogonalization:  False
+   Eigensolver: dimension reduced from 13 to 10, with eigval > 1.000e-14
+   Eigensolver: dimension reduced from 25 to 12, with eigval > 1.000e-14
+ Ansatz Growth Converged!
+ Number of operators in ansatz:  11
+ Number of basis used in final iteration of GCM: 43
+ Number of basis used in one-shot GCM P : 13
+ Number of basis used in one-shot GCM PM: 25
+ *True Energy :      -1.942993410649
+ *VQE Finished:      -1.942993410649
+ *GCM Finished:      -1.942993410649
+ *VQE error 4.884981e-15
+ *GCM error 1.332268e-15
+ *OneShot GCM P  error 3.108624e-15
+ *OneShot GCM PM error 2.886580e-15
+ -----------Final ansatz----------- 
+    #        Coeff               Term
+    0   0.00162365 -0.5 [4^ 1^ 7 6] +0.5 [5^ 0^ 7 6] +0.5 [7^ 6^ 4 1] +-0.5 [7^ 6^ 5 0]
+    1  -0.00168726 -0.5 [1^ 0^ 6 3] +0.5 [1^ 0^ 7 2] +0.5 [6^ 3^ 1 0] +-0.5 [7^ 2^ 1 0]
+    2  -0.00456248 0.408248290463863 [2^ 0^ 6 0] +0.2041241452319315 [2^ 1^ 6 1] +0.2041241452319315 [2^ 1^ 7 0] +0.2041241452319315 [3^ 0^ 6 1] +0.2041241452319315 [3^ 0^ 7 0] +0.408248290463863 [3^ 1^ 7 1] +-0.408248290463863 [6^ 0^ 2 0] +-0.2041241452319315 [6^ 1^ 2 1] +-0.2041241452319315 [6^ 1^ 3 0] +-0.2041241452319315 [7^ 0^ 2 1] +-0.2041241452319315 [7^ 0^ 3 0] +-0.408248290463863 [7^ 1^ 3 1]
+    3   0.00608494 0.408248290463863 [2^ 0^ 4 2] +0.2041241452319315 [2^ 1^ 4 3] +0.2041241452319315 [2^ 1^ 5 2] +0.2041241452319315 [3^ 0^ 4 3] +0.2041241452319315 [3^ 0^ 5 2] +0.408248290463863 [3^ 1^ 5 3] +-0.408248290463863 [4^ 2^ 2 0] +-0.2041241452319315 [4^ 3^ 2 1] +-0.2041241452319315 [4^ 3^ 3 0] +-0.2041241452319315 [5^ 2^ 2 1] +-0.2041241452319315 [5^ 2^ 3 0] +-0.408248290463863 [5^ 3^ 3 1]
+    4   0.15622107 0.35355339059327373 [4^ 1^ 6 3] +-0.35355339059327373 [4^ 1^ 7 2] +-0.35355339059327373 [5^ 0^ 6 3] +0.35355339059327373 [5^ 0^ 7 2] +-0.35355339059327373 [6^ 3^ 4 1] +0.35355339059327373 [6^ 3^ 5 0] +0.35355339059327373 [7^ 2^ 4 1] +-0.35355339059327373 [7^ 2^ 5 0]
+    5   0.10028761 0.408248290463863 [2^ 0^ 6 4] +0.2041241452319315 [2^ 1^ 6 5] +0.2041241452319315 [2^ 1^ 7 4] +0.2041241452319315 [3^ 0^ 6 5] +0.2041241452319315 [3^ 0^ 7 4] +0.408248290463863 [3^ 1^ 7 5] +-0.408248290463863 [6^ 4^ 2 0] +-0.2041241452319315 [6^ 5^ 2 1] +-0.2041241452319315 [6^ 5^ 3 0] +-0.2041241452319315 [7^ 4^ 2 1] +-0.2041241452319315 [7^ 4^ 3 0] +-0.408248290463863 [7^ 5^ 3 1]
+    6  -0.08448299 0.7071067811865475 [1^ 0^ 7 6] +-0.7071067811865475 [7^ 6^ 1 0]
+    7  -1.02231514 0.7071067811865475 [3^ 2^ 5 4] +-0.7071067811865475 [5^ 4^ 3 2]
+    8  -0.01934662 0.7071067811865475 [1^ 0^ 5 4] +-0.7071067811865475 [5^ 4^ 1 0]
+    9  -0.01814633 0.7071067811865475 [3^ 2^ 7 6] +-0.7071067811865475 [7^ 6^ 3 2]
+   10   0.23735800 0.35355339059327373 [2^ 1^ 6 5] +-0.35355339059327373 [2^ 1^ 7 4] +-0.35355339059327373 [3^ 0^ 6 5] +0.35355339059327373 [3^ 0^ 7 4] +-0.35355339059327373 [6^ 5^ 2 1] +0.35355339059327373 [6^ 5^ 3 0] +0.35355339059327373 [7^ 4^ 2 1] +-0.35355339059327373 [7^ 4^ 3 0]
+ ---------------------- 
+  --------------- Final Output ----------------------------  
+ Final ADAPT-VQE energy:  -1.94299341
+ <S^2> of final state  :   0.00000000
+ Numeber of optimazation iterations [4, 6, 7, 11, 11, 11, 16, 17, 19, 18, 16]
+[3.02072955e-05 2.47279855e-02 3.36585440e-08 8.71095312e-03
+ 2.45008837e-04 8.95559462e-04 8.88178420e-16 6.35132207e-06
+ 1.81035426e-06 9.60147969e-07 3.55271368e-15]

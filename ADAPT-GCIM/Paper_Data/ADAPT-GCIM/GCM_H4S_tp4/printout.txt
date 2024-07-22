@@ -1,0 +1,639 @@
+This is a modified operator_pools.py by Muqing Zheng
+This is a modified vqe_methods.py by Muqing Zheng
+This is a modified pyscf_helper.py by Muqing Zheng
+ ---------------------------------------------------------
+                                                          
+                      Using Pyscf:
+                                                          
+ ---------------------------------------------------------
+                                                          
+Choosing unit B
+converged SCF energy = -1.79158550783361
+
+System and Method:
+[('H', (0, 0, 0)), ('H', (0.03141463462364135, 1.9997532649633212, 0)), ('H', (2.0314146346236415, 1.9997532649633212, 0)), ('H', (2.0628292692472825, 0, 0))]
+Basis set                                      :      sto-3g
+Number of Orbitals                             :         4
+Number of electrons                            :         4
+Nuclear Repulsion                              :    2.6863890759 
+Electronic SCF energy                          :   -4.4779745837 
+SCF Energy                                     :   -1.7915855078
+ AO->MO
+ NElectrons:    2    2
+ ecore:   0.00000000
+ ERIs in the active-space:
+(4, 4, 4, 4)    0.00204800 Mb
+ n_orb:    4
+ n_a  :    2
+ n_b  :    2
+ HF Energy:  -1.79158551
+ Build reference state with    2 alpha and    2 beta electrons [0, 2, 1, 3]
+ State    0:  -1.94299341 au  <S2>:   0.00000000
+ Use Spin-complete Pool:  False
+ Saved in folder:  Output_Data/ADAPT-GCM/GCM_H4S_tp4/
+ Form singlet GSD operators
+ Number of operators:  66
+Finish Pool Construction.
+
+
+ Reference Energy:  -1.79158551
+ Generate Sparse Matrices for operators in pool
+ Start ADAPT-GCM algorithm
+ Now start to grow the ansatz
+
+
+
+
+ --------------------------------------------------------------------------
+                         ADAPT-GCM iteration:  0
+ --------------------------------------------------------------------------
+ Norm of <[H,A]> =   0.46366169
+ Max  of <[H,A]> =  -0.30262225
+ Max  of gradient =  -0.30262225
+ Add operator   26
+
+--------- GCM Computation Start ---------
+Orthogonalization:  False
+Number of saved prod bases 0 H matrix size (2, 2)
+   Eigensolver: dimension reduced from 2 to 2, with eigval > 1.000e-13
+--------- GCM Computation Over  ---------
+
+ GCM Finished:      -1.824351240780
+ GCM error 1.186422e-01
+
+
+
+
+ --------------------------------------------------------------------------
+                         ADAPT-GCM iteration:  1
+ --------------------------------------------------------------------------
+ Norm of <[H,A]> =   0.39011302
+ Max  of <[H,A]> =   0.21622104
+ Max  of gradient =   0.21622104
+ Add operator   52
+
+--------- GCM Computation Start ---------
+Orthogonalization:  False
+Passing out extra product bases and no orthgonalization
+Number of saved prod bases 1 H matrix size (4, 4)
+   Eigensolver: dimension reduced from 4 to 4, with eigval > 1.000e-13
+--------- GCM Computation Over  ---------
+
+ GCM Finished:      -1.872272719752
+ GCM error 7.072069e-02
+
+
+
+
+ --------------------------------------------------------------------------
+                         ADAPT-GCM iteration:  2
+ --------------------------------------------------------------------------
+ Norm of <[H,A]> =   0.38633872
+ Max  of <[H,A]> =   0.18913357
+ Max  of gradient =   0.18913357
+ Add operator   50
+
+--------- GCM Computation Start ---------
+Orthogonalization:  False
+Passing out extra product bases and no orthgonalization
+Number of saved prod bases 2 H matrix size (6, 6)
+   Eigensolver: dimension reduced from 6 to 6, with eigval > 1.000e-13
+--------- GCM Computation Over  ---------
+
+ GCM Finished:      -1.929903277836
+ GCM error 1.309013e-02
+
+
+
+
+ --------------------------------------------------------------------------
+                         ADAPT-GCM iteration:  3
+ --------------------------------------------------------------------------
+ Norm of <[H,A]> =   0.48442590
+ Max  of <[H,A]> =   0.27164954
+ Max  of gradient =   0.27164954
+ Add operator   64
+
+--------- GCM Computation Start ---------
+Orthogonalization:  False
+Passing out extra product bases and no orthgonalization
+Number of saved prod bases 3 H matrix size (8, 8)
+   Eigensolver: dimension reduced from 8 to 7, with eigval > 1.000e-13
+--------- GCM Computation Over  ---------
+
+ GCM Finished:      -1.930257623059
+ GCM error 1.273579e-02
+
+
+
+
+ --------------------------------------------------------------------------
+                         ADAPT-GCM iteration:  4
+ --------------------------------------------------------------------------
+ Norm of <[H,A]> =   0.27876899
+ Max  of <[H,A]> =   0.17586516
+ Max  of gradient =   0.17586516
+ Add operator    9
+
+--------- GCM Computation Start ---------
+Orthogonalization:  False
+Passing out extra product bases and no orthgonalization
+Number of saved prod bases 4 H matrix size (10, 10)
+   Eigensolver: dimension reduced from 10 to 7, with eigval > 1.000e-13
+--------- GCM Computation Over  ---------
+
+ GCM Finished:      -1.930257623059
+ GCM error 1.273579e-02
+
+
+
+
+ --------------------------------------------------------------------------
+                         ADAPT-GCM iteration:  5
+ --------------------------------------------------------------------------
+ Norm of <[H,A]> =   0.66550616
+ Max  of <[H,A]> =   0.58273921
+ Max  of gradient =   0.58273921
+ Small change in 0/10 iterations
+ Add operator   14
+
+--------- GCM Computation Start ---------
+Orthogonalization:  False
+Passing out extra product bases and no orthgonalization
+Number of saved prod bases 5 H matrix size (12, 12)
+   Eigensolver: dimension reduced from 12 to 7, with eigval > 1.000e-13
+--------- GCM Computation Over  ---------
+
+ GCM Finished:      -1.930257623059
+ GCM error 1.273579e-02
+
+
+
+
+ --------------------------------------------------------------------------
+                         ADAPT-GCM iteration:  6
+ --------------------------------------------------------------------------
+ Norm of <[H,A]> =   0.31092220
+ Max  of <[H,A]> =   0.19397217
+ Max  of gradient =   0.19397217
+ Small change in 1/10 iterations
+ Add operator   12
+
+--------- GCM Computation Start ---------
+Orthogonalization:  False
+Passing out extra product bases and no orthgonalization
+Number of saved prod bases 6 H matrix size (14, 14)
+   Eigensolver: dimension reduced from 14 to 7, with eigval > 1.000e-13
+--------- GCM Computation Over  ---------
+
+ GCM Finished:      -1.930257623059
+ GCM error 1.273579e-02
+
+
+
+
+ --------------------------------------------------------------------------
+                         ADAPT-GCM iteration:  7
+ --------------------------------------------------------------------------
+ Norm of <[H,A]> =   0.25030914
+ Max  of <[H,A]> =  -0.17880371
+ Max  of gradient =  -0.17880371
+ Small change in 2/10 iterations
+ Add operator   33
+
+--------- GCM Computation Start ---------
+Orthogonalization:  False
+Passing out extra product bases and no orthgonalization
+Number of saved prod bases 7 H matrix size (16, 16)
+   Eigensolver: dimension reduced from 16 to 8, with eigval > 1.000e-13
+--------- GCM Computation Over  ---------
+
+ GCM Finished:      -1.942981302161
+ GCM error 1.210849e-05
+
+
+
+
+ --------------------------------------------------------------------------
+                         ADAPT-GCM iteration:  8
+ --------------------------------------------------------------------------
+ Norm of <[H,A]> =   0.19799643
+ Max  of <[H,A]> =  -0.18933109
+ Max  of gradient =  -0.18933109
+ Add operator   34
+
+--------- GCM Computation Start ---------
+Orthogonalization:  False
+Passing out extra product bases and no orthgonalization
+Number of saved prod bases 8 H matrix size (18, 18)
+   Eigensolver: dimension reduced from 18 to 8, with eigval > 1.000e-13
+--------- GCM Computation Over  ---------
+
+ GCM Finished:      -1.942981302161
+ GCM error 1.210849e-05
+
+
+
+
+ --------------------------------------------------------------------------
+                         ADAPT-GCM iteration:  9
+ --------------------------------------------------------------------------
+ Norm of <[H,A]> =   0.15660795
+ Max  of <[H,A]> =  -0.15546512
+ Max  of gradient =  -0.15546512
+ Small change in 0/10 iterations
+ Add operator   25
+
+--------- GCM Computation Start ---------
+Orthogonalization:  False
+Passing out extra product bases and no orthgonalization
+Number of saved prod bases 9 H matrix size (20, 20)
+   Eigensolver: dimension reduced from 20 to 8, with eigval > 1.000e-13
+--------- GCM Computation Over  ---------
+
+ GCM Finished:      -1.942981302161
+ GCM error 1.210849e-05
+
+
+
+
+ --------------------------------------------------------------------------
+                         ADAPT-GCM iteration:  10
+ --------------------------------------------------------------------------
+ Norm of <[H,A]> =   0.01982087
+ Max  of <[H,A]> =   0.01820107
+ Max  of gradient =   0.01820107
+ Small change in 1/10 iterations
+ Add operator   40
+
+--------- GCM Computation Start ---------
+Orthogonalization:  False
+Passing out extra product bases and no orthgonalization
+Number of saved prod bases 10 H matrix size (22, 22)
+   Eigensolver: dimension reduced from 22 to 8, with eigval > 1.000e-13
+--------- GCM Computation Over  ---------
+
+ GCM Finished:      -1.942981302161
+ GCM error 1.210849e-05
+
+
+
+
+ --------------------------------------------------------------------------
+                         ADAPT-GCM iteration:  11
+ --------------------------------------------------------------------------
+ Norm of <[H,A]> =   0.07584100
+ Max  of <[H,A]> =  -0.07456495
+ Max  of gradient =  -0.07456495
+ Small change in 2/10 iterations
+ Add operator   41
+
+--------- GCM Computation Start ---------
+Orthogonalization:  False
+Passing out extra product bases and no orthgonalization
+Number of saved prod bases 11 H matrix size (24, 24)
+   Eigensolver: dimension reduced from 24 to 8, with eigval > 1.000e-13
+--------- GCM Computation Over  ---------
+
+ GCM Finished:      -1.942981302161
+ GCM error 1.210849e-05
+
+
+
+
+ --------------------------------------------------------------------------
+                         ADAPT-GCM iteration:  12
+ --------------------------------------------------------------------------
+ Norm of <[H,A]> =   0.01643245
+ Max  of <[H,A]> =  -0.00814537
+ Max  of gradient =  -0.00814537
+ Small change in 3/10 iterations
+ Add operator    7
+
+--------- GCM Computation Start ---------
+Orthogonalization:  False
+Passing out extra product bases and no orthgonalization
+Number of saved prod bases 12 H matrix size (26, 26)
+   Eigensolver: dimension reduced from 26 to 10, with eigval > 1.000e-13
+--------- GCM Computation Over  ---------
+
+ GCM Finished:      -1.942989748739
+ GCM error 3.661910e-06
+
+
+
+
+ --------------------------------------------------------------------------
+                         ADAPT-GCM iteration:  13
+ --------------------------------------------------------------------------
+ Norm of <[H,A]> =   0.54414721
+ Max  of <[H,A]> =  -0.30037317
+ Max  of gradient =  -0.30037317
+ Add operator    1
+
+--------- GCM Computation Start ---------
+Orthogonalization:  False
+Passing out extra product bases and no orthgonalization
+Number of saved prod bases 13 H matrix size (28, 28)
+   Eigensolver: dimension reduced from 28 to 11, with eigval > 1.000e-13
+--------- GCM Computation Over  ---------
+
+ GCM Finished:      -1.942990393947
+ GCM error 3.016701e-06
+
+
+
+
+ --------------------------------------------------------------------------
+                         ADAPT-GCM iteration:  14
+ --------------------------------------------------------------------------
+ Norm of <[H,A]> =   0.16663855
+ Max  of <[H,A]> =  -0.12222233
+ Max  of gradient =  -0.12222233
+ Small change in 0/10 iterations
+ Add operator   38
+
+--------- GCM Computation Start ---------
+Orthogonalization:  False
+Passing out extra product bases and no orthgonalization
+Number of saved prod bases 14 H matrix size (30, 30)
+   Eigensolver: dimension reduced from 30 to 12, with eigval > 1.000e-13
+--------- GCM Computation Over  ---------
+
+ GCM Finished:      -1.942993410649
+ GCM error 2.886580e-15
+
+
+
+
+ --------------------------------------------------------------------------
+                         ADAPT-GCM iteration:  15
+ --------------------------------------------------------------------------
+ Norm of <[H,A]> =   0.19108593
+ Max  of <[H,A]> =  -0.08356539
+ Max  of gradient =  -0.08356539
+ Add operator   62
+
+--------- GCM Computation Start ---------
+Orthogonalization:  False
+Passing out extra product bases and no orthgonalization
+Number of saved prod bases 15 H matrix size (32, 32)
+   Eigensolver: dimension reduced from 32 to 12, with eigval > 1.000e-13
+--------- GCM Computation Over  ---------
+
+ GCM Finished:      -1.942993410649
+ GCM error 2.220446e-15
+
+
+
+
+ --------------------------------------------------------------------------
+                         ADAPT-GCM iteration:  16
+ --------------------------------------------------------------------------
+ Norm of <[H,A]> =   0.65924589
+ Max  of <[H,A]> =  -0.47913345
+ Max  of gradient =  -0.47913345
+ Small change in 0/10 iterations
+ Add operator   17
+
+--------- GCM Computation Start ---------
+Orthogonalization:  False
+Passing out extra product bases and no orthgonalization
+Number of saved prod bases 16 H matrix size (34, 34)
+   Eigensolver: dimension reduced from 34 to 12, with eigval > 1.000e-13
+--------- GCM Computation Over  ---------
+
+ GCM Finished:      -1.942993410649
+ GCM error 2.664535e-15
+
+
+
+
+ --------------------------------------------------------------------------
+                         ADAPT-GCM iteration:  17
+ --------------------------------------------------------------------------
+ Norm of <[H,A]> =   0.50124736
+ Max  of <[H,A]> =   0.35795019
+ Max  of gradient =   0.35795019
+ Small change in 1/10 iterations
+ Add operator    4
+
+--------- GCM Computation Start ---------
+Orthogonalization:  False
+Passing out extra product bases and no orthgonalization
+Number of saved prod bases 17 H matrix size (36, 36)
+   Eigensolver: dimension reduced from 36 to 12, with eigval > 1.000e-13
+--------- GCM Computation Over  ---------
+
+ GCM Finished:      -1.942993410649
+ GCM error 2.220446e-15
+
+
+
+
+ --------------------------------------------------------------------------
+                         ADAPT-GCM iteration:  18
+ --------------------------------------------------------------------------
+ Norm of <[H,A]> =   0.36294665
+ Max  of <[H,A]> =  -0.27409597
+ Max  of gradient =  -0.27409597
+ Small change in 2/10 iterations
+ Add operator   18
+
+--------- GCM Computation Start ---------
+Orthogonalization:  False
+Passing out extra product bases and no orthgonalization
+Number of saved prod bases 18 H matrix size (38, 38)
+   Eigensolver: dimension reduced from 38 to 12, with eigval > 1.000e-13
+--------- GCM Computation Over  ---------
+
+ GCM Finished:      -1.942993410649
+ GCM error 2.220446e-15
+
+
+
+
+ --------------------------------------------------------------------------
+                         ADAPT-GCM iteration:  19
+ --------------------------------------------------------------------------
+ Norm of <[H,A]> =   0.28302458
+ Max  of <[H,A]> =  -0.23780187
+ Max  of gradient =  -0.23780187
+ Small change in 3/10 iterations
+ Add operator   49
+
+--------- GCM Computation Start ---------
+Orthogonalization:  False
+Passing out extra product bases and no orthgonalization
+Number of saved prod bases 19 H matrix size (40, 40)
+   Eigensolver: dimension reduced from 40 to 12, with eigval > 1.000e-13
+--------- GCM Computation Over  ---------
+
+ GCM Finished:      -1.942993410649
+ GCM error 2.220446e-15
+
+
+
+
+ --------------------------------------------------------------------------
+                         ADAPT-GCM iteration:  20
+ --------------------------------------------------------------------------
+ Norm of <[H,A]> =   0.19901965
+ Max  of <[H,A]> =   0.16137016
+ Max  of gradient =   0.16137016
+ Small change in 4/10 iterations
+ Add operator   20
+
+--------- GCM Computation Start ---------
+Orthogonalization:  False
+Passing out extra product bases and no orthgonalization
+Number of saved prod bases 20 H matrix size (42, 42)
+   Eigensolver: dimension reduced from 42 to 12, with eigval > 1.000e-13
+--------- GCM Computation Over  ---------
+
+ GCM Finished:      -1.942993410649
+ GCM error 2.220446e-15
+
+
+
+
+ --------------------------------------------------------------------------
+                         ADAPT-GCM iteration:  21
+ --------------------------------------------------------------------------
+ Norm of <[H,A]> =   0.34134292
+ Max  of <[H,A]> =  -0.23626292
+ Max  of gradient =  -0.23626292
+ Small change in 5/10 iterations
+ Add operator   21
+
+--------- GCM Computation Start ---------
+Orthogonalization:  False
+Passing out extra product bases and no orthgonalization
+Number of saved prod bases 21 H matrix size (44, 44)
+   Eigensolver: dimension reduced from 44 to 12, with eigval > 1.000e-13
+--------- GCM Computation Over  ---------
+
+ GCM Finished:      -1.942993410649
+ GCM error 2.886580e-15
+
+
+
+
+ --------------------------------------------------------------------------
+                         ADAPT-GCM iteration:  22
+ --------------------------------------------------------------------------
+ Norm of <[H,A]> =   0.13939717
+ Max  of <[H,A]> =  -0.07706295
+ Max  of gradient =  -0.07706295
+ Small change in 6/10 iterations
+ Add operator   35
+
+--------- GCM Computation Start ---------
+Orthogonalization:  False
+Passing out extra product bases and no orthgonalization
+Number of saved prod bases 22 H matrix size (46, 46)
+   Eigensolver: dimension reduced from 46 to 12, with eigval > 1.000e-13
+--------- GCM Computation Over  ---------
+
+ GCM Finished:      -1.942993410649
+ GCM error 2.220446e-15
+
+
+
+
+ --------------------------------------------------------------------------
+                         ADAPT-GCM iteration:  23
+ --------------------------------------------------------------------------
+ Norm of <[H,A]> =   0.15906248
+ Max  of <[H,A]> =   0.09031879
+ Max  of gradient =   0.09031879
+ Small change in 7/10 iterations
+ Add operator   56
+
+--------- GCM Computation Start ---------
+Orthogonalization:  False
+Passing out extra product bases and no orthgonalization
+Number of saved prod bases 23 H matrix size (48, 48)
+   Eigensolver: dimension reduced from 48 to 12, with eigval > 1.000e-13
+--------- GCM Computation Over  ---------
+
+ GCM Finished:      -1.942993410649
+ GCM error 2.664535e-15
+
+
+
+
+ --------------------------------------------------------------------------
+                         ADAPT-GCM iteration:  24
+ --------------------------------------------------------------------------
+ Norm of <[H,A]> =   0.26748880
+ Max  of <[H,A]> =   0.22389471
+ Max  of gradient =   0.22389471
+ Small change in 8/10 iterations
+ Add operator   11
+
+--------- GCM Computation Start ---------
+Orthogonalization:  False
+Passing out extra product bases and no orthgonalization
+Number of saved prod bases 24 H matrix size (50, 50)
+   Eigensolver: dimension reduced from 50 to 12, with eigval > 1.000e-13
+--------- GCM Computation Over  ---------
+
+ GCM Finished:      -1.942993410649
+ GCM error 2.220446e-15
+
+
+
+
+ --------------------------------------------------------------------------
+                         ADAPT-GCM iteration:  25
+ --------------------------------------------------------------------------
+ Norm of <[H,A]> =   0.13436421
+ Max  of <[H,A]> =  -0.10775690
+ Max  of gradient =  -0.10775690
+ Small change in 9/10 iterations
+ Converged due to tiny changes 4.441e-16 in eigenvalues in 10 iterations
+Orthogonalization:  False
+Orthogonalization:  False
+   Eigensolver: dimension reduced from 27 to 10, with eigval > 1.000e-13
+   Eigensolver: dimension reduced from 53 to 12, with eigval > 1.000e-13
+ Ansatz Growth Converged!
+ Number of operators in ansatz:  25
+ Number of basis used in final iteration of GCM: 50
+ Number of basis used in one-shot GCM P : 27
+ Number of basis used in one-shot GCM PM: 53
+ *True Energy :      -1.942993410649
+ *GCM Finished:      -1.942993410649
+ *GCM error 2.220446e-15
+ *OneShot GCM P  error 2.637825e-03
+ *OneShot GCM PM error 4.440892e-15
+ -----------Final ansatz----------- 
+    #        Coeff               Term
+    0   0.78539816 0.35355339059327373 [2^ 1^ 6 5] +-0.35355339059327373 [2^ 1^ 7 4] +-0.35355339059327373 [3^ 0^ 6 5] +0.35355339059327373 [3^ 0^ 7 4] +-0.35355339059327373 [6^ 5^ 2 1] +0.35355339059327373 [6^ 5^ 3 0] +0.35355339059327373 [7^ 4^ 2 1] +-0.35355339059327373 [7^ 4^ 3 0]
+    1   0.78539816 0.7071067811865475 [3^ 2^ 7 6] +-0.7071067811865475 [7^ 6^ 3 2]
+    2   0.78539816 0.7071067811865475 [3^ 2^ 5 4] +-0.7071067811865475 [5^ 4^ 3 2]
+    3   0.78539816 0.7071067811865475 [5^ 4^ 7 6] +-0.7071067811865475 [7^ 6^ 5 4]
+    4   0.78539816 0.7071067811865475 [1^ 0^ 3 2] +-0.7071067811865475 [3^ 2^ 1 0]
+    5   0.78539816 0.7071067811865475 [1^ 0^ 7 6] +-0.7071067811865475 [7^ 6^ 1 0]
+    6   0.78539816 0.7071067811865475 [1^ 0^ 5 4] +-0.7071067811865475 [5^ 4^ 1 0]
+    7   0.78539816 0.408248290463863 [4^ 0^ 6 2] +0.2041241452319315 [4^ 1^ 6 3] +0.2041241452319315 [4^ 1^ 7 2] +0.2041241452319315 [5^ 0^ 6 3] +0.2041241452319315 [5^ 0^ 7 2] +0.408248290463863 [5^ 1^ 7 3] +-0.408248290463863 [6^ 2^ 4 0] +-0.2041241452319315 [6^ 3^ 4 1] +-0.2041241452319315 [6^ 3^ 5 0] +-0.2041241452319315 [7^ 2^ 4 1] +-0.2041241452319315 [7^ 2^ 5 0] +-0.408248290463863 [7^ 3^ 5 1]
+    8   0.78539816 0.35355339059327373 [4^ 1^ 6 3] +-0.35355339059327373 [4^ 1^ 7 2] +-0.35355339059327373 [5^ 0^ 6 3] +0.35355339059327373 [5^ 0^ 7 2] +-0.35355339059327373 [6^ 3^ 4 1] +0.35355339059327373 [6^ 3^ 5 0] +0.35355339059327373 [7^ 2^ 4 1] +-0.35355339059327373 [7^ 2^ 5 0]
+    9   0.78539816 0.408248290463863 [2^ 0^ 6 4] +0.2041241452319315 [2^ 1^ 6 5] +0.2041241452319315 [2^ 1^ 7 4] +0.2041241452319315 [3^ 0^ 6 5] +0.2041241452319315 [3^ 0^ 7 4] +0.408248290463863 [3^ 1^ 7 5] +-0.408248290463863 [6^ 4^ 2 0] +-0.2041241452319315 [6^ 5^ 2 1] +-0.2041241452319315 [6^ 5^ 3 0] +-0.2041241452319315 [7^ 4^ 2 1] +-0.2041241452319315 [7^ 4^ 3 0] +-0.408248290463863 [7^ 5^ 3 1]
+   10   0.78539816 -0.408248290463863 [4^ 2^ 6 0] +-0.2041241452319315 [4^ 3^ 6 1] +-0.2041241452319315 [4^ 3^ 7 0] +-0.2041241452319315 [5^ 2^ 6 1] +-0.2041241452319315 [5^ 2^ 7 0] +-0.408248290463863 [5^ 3^ 7 1] +0.408248290463863 [6^ 0^ 4 2] +0.2041241452319315 [6^ 1^ 4 3] +0.2041241452319315 [6^ 1^ 5 2] +0.2041241452319315 [7^ 0^ 4 3] +0.2041241452319315 [7^ 0^ 5 2] +0.408248290463863 [7^ 1^ 5 3]
+   11   0.78539816 -0.35355339059327373 [4^ 3^ 6 1] +0.35355339059327373 [4^ 3^ 7 0] +0.35355339059327373 [5^ 2^ 6 1] +-0.35355339059327373 [5^ 2^ 7 0] +0.35355339059327373 [6^ 1^ 4 3] +-0.35355339059327373 [6^ 1^ 5 2] +-0.35355339059327373 [7^ 0^ 4 3] +0.35355339059327373 [7^ 0^ 5 2]
+   12   0.78539816 -0.5 [1^ 0^ 4 1] +0.5 [1^ 0^ 5 0] +0.5 [4^ 1^ 1 0] +-0.5 [5^ 0^ 1 0]
+   13   0.78539816 0.5 [0^ 4] +0.5 [1^ 5] +-0.5 [4^ 0] +-0.5 [5^ 1]
+   14   0.78539816 -0.5 [4^ 1^ 7 6] +0.5 [5^ 0^ 7 6] +0.5 [7^ 6^ 4 1] +-0.5 [7^ 6^ 5 0]
+   15   0.78539816 -0.5 [6^ 3^ 7 6] +0.5 [7^ 2^ 7 6] +0.5 [7^ 6^ 6 3] +-0.5 [7^ 6^ 7 2]
+   16   0.78539816 0.408248290463863 [2^ 0^ 6 0] +0.2041241452319315 [2^ 1^ 6 1] +0.2041241452319315 [2^ 1^ 7 0] +0.2041241452319315 [3^ 0^ 6 1] +0.2041241452319315 [3^ 0^ 7 0] +0.408248290463863 [3^ 1^ 7 1] +-0.408248290463863 [6^ 0^ 2 0] +-0.2041241452319315 [6^ 1^ 2 1] +-0.2041241452319315 [6^ 1^ 3 0] +-0.2041241452319315 [7^ 0^ 2 1] +-0.2041241452319315 [7^ 0^ 3 0] +-0.408248290463863 [7^ 1^ 3 1]
+   17   0.78539816 0.5 [2^ 6] +0.5 [3^ 7] +-0.5 [6^ 2] +-0.5 [7^ 3]
+   18   0.78539816 0.35355339059327373 [2^ 1^ 6 1] +-0.35355339059327373 [2^ 1^ 7 0] +-0.35355339059327373 [3^ 0^ 6 1] +0.35355339059327373 [3^ 0^ 7 0] +-0.35355339059327373 [6^ 1^ 2 1] +0.35355339059327373 [6^ 1^ 3 0] +0.35355339059327373 [7^ 0^ 2 1] +-0.35355339059327373 [7^ 0^ 3 0]
+   19   0.78539816 -0.5 [3^ 2^ 6 3] +0.5 [3^ 2^ 7 2] +0.5 [6^ 3^ 3 2] +-0.5 [7^ 2^ 3 2]
+   20   0.78539816 0.408248290463863 [2^ 0^ 4 2] +0.2041241452319315 [2^ 1^ 4 3] +0.2041241452319315 [2^ 1^ 5 2] +0.2041241452319315 [3^ 0^ 4 3] +0.2041241452319315 [3^ 0^ 5 2] +0.408248290463863 [3^ 1^ 5 3] +-0.408248290463863 [4^ 2^ 2 0] +-0.2041241452319315 [4^ 3^ 2 1] +-0.2041241452319315 [4^ 3^ 3 0] +-0.2041241452319315 [5^ 2^ 2 1] +-0.2041241452319315 [5^ 2^ 3 0] +-0.408248290463863 [5^ 3^ 3 1]
+   21   0.78539816 0.35355339059327373 [2^ 1^ 4 3] +-0.35355339059327373 [2^ 1^ 5 2] +-0.35355339059327373 [3^ 0^ 4 3] +0.35355339059327373 [3^ 0^ 5 2] +-0.35355339059327373 [4^ 3^ 2 1] +0.35355339059327373 [4^ 3^ 3 0] +0.35355339059327373 [5^ 2^ 2 1] +-0.35355339059327373 [5^ 2^ 3 0]
+   22   0.78539816 -0.5 [4^ 1^ 5 4] +0.5 [5^ 0^ 5 4] +0.5 [5^ 4^ 4 1] +-0.5 [5^ 4^ 5 0]
+   23   0.78539816 0.408248290463863 [4^ 2^ 6 4] +0.2041241452319315 [4^ 3^ 6 5] +0.2041241452319315 [4^ 3^ 7 4] +0.2041241452319315 [5^ 2^ 6 5] +0.2041241452319315 [5^ 2^ 7 4] +0.408248290463863 [5^ 3^ 7 5] +-0.408248290463863 [6^ 4^ 4 2] +-0.2041241452319315 [6^ 5^ 4 3] +-0.2041241452319315 [6^ 5^ 5 2] +-0.2041241452319315 [7^ 4^ 4 3] +-0.2041241452319315 [7^ 4^ 5 2] +-0.408248290463863 [7^ 5^ 5 3]
+   24   0.78539816 -0.5 [1^ 0^ 6 3] +0.5 [1^ 0^ 7 2] +0.5 [6^ 3^ 1 0] +-0.5 [7^ 2^ 1 0]
+ ---------------------- 
+Selected indices: [26, 52, 50, 64, 9, 14, 12, 33, 34, 25, 40, 41, 7, 1, 38, 62, 17, 4, 18, 49, 20, 21, 35, 56, 11]
+Eigenvalues: [-1.8243512407795586, -1.872272719751587, -1.9299032778362852, -1.9302576230587862, -1.9302576230587682, -1.9302576230587674, -1.9302576230587691, -1.9429813021613955, -1.9429813021613949, -1.9429813021613944, -1.9429813021613953, -1.9429813021613958, -1.9429897487389813, -1.9429903939472686, -1.942993410648669, -1.9429934106486697, -1.9429934106486693, -1.9429934106486697, -1.9429934106486697, -1.9429934106486697, -1.9429934106486697, -1.942993410648669, -1.9429934106486697, -1.9429934106486693, -1.9429934106486697]
