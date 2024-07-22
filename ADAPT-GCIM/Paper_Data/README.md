@@ -12,7 +12,7 @@ In `IterMats`, projected Hamiltonian matrix H and overlap matrix S are recored, 
 General
 * `printout.txt` gives all printout in ADAPT-VQE along with ADAPT-VQE-GCIM and ADAPT-VQE-GCIM(1). NOTE: due to the change of the implementation of the custom eigensolver, the eigenvalues from GCIM in this file are not accurate. For the accurate values, please use `GCM_DIFFS_EIGRECON.npy`.
 * `optimized_coeffs.npy` stores the optimal parameters from ADAPT-VQE after convergence (also partially used by ADAPT-GCIM, as described in paper)
-* `selected_indices.npy` stores the index of selected ansatzes based on VQE gradients, need to pair with spin-adapted pool, i.e., the pool from code `operator_pools.singlet_GSD()` in `ADAPT_GCIM_Tutorial.ipynb`
+* `selected_indices.npy` stores the index of selected ansatzes based on VQE gradients, need to pair with spin-adapted pool, i.e., the pool from code `operator_pools.singlet_GSD()` in `ADAPT_GCIM_Demo.ipynb`
 * `times_XXX.npy` stores computation time for XXX, including gradeint evaluaiton, VQE optimization, GCIM matrix formation, GCIM eigensolving
 
 ADAPT-VQE-GCIM Part
