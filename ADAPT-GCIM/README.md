@@ -28,7 +28,7 @@ openfermion==1.5.1
 openfermionpsi4==0.5
 pyscf==2.6.2
 ```
-Note that, if your computer use Apple M series chip, please install PySCF as
+Note that, if your computer uses Apple M series chip, please install PySCF as
 ```
 ARCHFLAGS="-arch arm64e" pip install pyscf==2.6.2
 ```
