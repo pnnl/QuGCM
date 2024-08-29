@@ -6,15 +6,19 @@ Code and data for [paper](https://journals.aps.org/prresearch/abstract/10.1103/P
  
  * `Data_in_paper/Explanation.ipynb` shows the generation and usage of the raw data in paper
 
-
 ## Prerequisite
 
 ```text
 pip install tweedledum==1.1
+pip install numpy==1.26.4
 pip install qiskit==0.37.0
 pip install qiskit_nature==0.4.2
 ```
 
+For Mac with M chips, you may try tweedledum 1.0.0, although it does not satisfies the requirement for Qiskit Terra 0.21.0.
+```
+pip install tweedledum==1.0.0
+```
 
 ## Used package version
 
