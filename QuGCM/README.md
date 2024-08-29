@@ -1,7 +1,3 @@
-
-Major Update Preview (Sept 05, 2023): This repo will get a major update soon to greatly speedup the computation from software level. The code for the paper will be put into a indepdent folder in this repo.
-
-
 # Quantum Generator Coordinated Method (QuGCM)
 
 Code and data for [paper](https://journals.aps.org/prresearch/abstract/10.1103/PhysRevResearch.5.023200)
@@ -14,8 +10,9 @@ Code and data for [paper](https://journals.aps.org/prresearch/abstract/10.1103/P
 ## Prerequisite
 
 ```text
-pip install qiskit
-pip install qiskit_nature
+pip install tweedledum==1.1
+pip install qiskit==0.37.0
+pip install qiskit_nature==0.4.2
 ```
 
 
@@ -23,6 +20,7 @@ pip install qiskit_nature
 
 ```
 	'Python':	'3.9.7'
+	'tweedledum': '1.1'
 	'qiskit-terra': '0.21.0'
 	'qiskit-aer': '0.10.4'
 	'qiskit-ignis': None
