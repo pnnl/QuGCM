@@ -1,9 +1,9 @@
 # ADAPT-GCIM
 
-Code and data for the [ADAPT-GCIM paper](https://arxiv.org/abs/2312.07691). We use the certain files from the [original ADAPT-VQE repository](https://github.com/mayhallgroup/adapt-vqe/tree/master/src) to construct the Hamiltonian and ansatz pool (and the VQE gradient computation provided in the same file) so that the performance comparison in the paper is straightforward and without doubts. We highly appreciate the accessibility of the source code of ADAPT-VQE. 
+Code and data for the ADAPT-GCIM paper[(arXiv)](https://arxiv.org/abs/2312.07691) [(published)](https://doi.org/10.1038/s41534-024-00916-8). So it does not include ADAPT-VQE-GCM. . We use the certain files from the [original ADAPT-VQE repository](https://github.com/mayhallgroup/adapt-vqe/tree/master/src) to construct the Hamiltonian and ansatz pool (and the VQE gradient computation provided in the same file) so that the performance comparison in the paper is straightforward and without doubts. We highly appreciate the accessibility of the source code of ADAPT-VQE. 
 
 ## Files and folders in this path
-* `Paper_Data` folder: The folder contains all data for the [ADAPT-GCIM paper](https://arxiv.org/abs/2312.07691). See the README inside for details.
+* `Paper_Data` folder: The folder contains all data for the ADAPT-GCIM paper. See the README inside for details.
 * `ADAPT_GCIM_Demo.ipynb`: The step-by-step demo for ADAPT-GCIM and quantum resource estimation with a LiH example.
 * `environment.yml`: The files that contains all my packages installed in our Anaconda environment. The essential ones are listed in the next section
 * `adapt_gcim.py`: The key files that run ADAPT-GCIM.
@@ -37,12 +37,12 @@ ARCHFLAGS="-arch arm64e" pip install pyscf==2.6.2
 
 To have an accurate and dirct comparison, we utilize the following files from [ADAPT-VQE repository](https://github.com/mayhallgroup/adapt-vqe/tree/master/src)
 * [`pyscf_helper.py`](https://github.com/Firepanda415/adapt-vqe-for-gcim/blob/master/src/pyscf_helper.py) to create the Hamiltonian from the geometry
-* [`operator_pools.py`](https://github.com/Firepanda415/adapt-vqe-for-gcim/blob/master/src/operator_pools.py) to generate ansatz pool (as discussed in [ADAPT-GCIM paper](https://arxiv.org/abs/2312.07691))
+* [`operator_pools.py`](https://github.com/Firepanda415/adapt-vqe-for-gcim/blob/master/src/operator_pools.py) to generate ansatz pool (as discussed in ADAPT-GCIM paper)
 
 To run the program under a newer version of PySCF, please use my modified versions for both .py files from [my forked ADAPT-VQE repository](https://github.com/Firepanda415/adapt-vqe-for-gcim/tree/master). You can download them by click the links above.
 
 
-If the atomic unit is used (such as $H_4$ and $H_6$ in [ADAPT-GCIM paper](https://arxiv.org/abs/2312.07691)), please add the following code in line 229 in `pyscf_helper.py`
+If the atomic unit is used (such as $H_4$ and $H_6$ in ADAPT-GCIM paper), please add the following code in line 229 in `pyscf_helper.py`
 ```
 mol.unit = 'B'  # (B, b, Bohr, bohr, AU, au) or (A, a, Angstrom, angstrom, Ang, ang)
 ```

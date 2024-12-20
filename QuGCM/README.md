@@ -1,6 +1,6 @@
 # Quantum Generator Coordinated Method (QuGCM)
 
-Code and data for [paper](https://journals.aps.org/prresearch/abstract/10.1103/PhysRevResearch.5.023200)
+Code and data for paper [(arXiv)](https://arxiv.org/abs/2212.09205) [(published)](https://journals.aps.org/prresearch/abstract/10.1103/PhysRevResearch.5.023200)
 
  * `Demo.ipynb` shows the whole computational process to obtain the lowest energy
  
