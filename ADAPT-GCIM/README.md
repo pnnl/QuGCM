@@ -19,7 +19,7 @@ conda env create -f environment.yml
 conda activate gcimtest
 ```
 
-Or, more specifically, you can use Python 3.10 or 3.11, and install the following packages.
+Or, more specifically, you can use Python 3.10 to 3.12, and install the following packages.
 
 ```text
 qiskit==0.45.0

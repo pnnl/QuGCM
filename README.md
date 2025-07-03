@@ -13,3 +13,7 @@ Code for reproducing experiments and data for the ADAPT-GCIM part of the ADAPT-G
 It requires two python files (not need to install, but just copy the files) in the [original ADAPT-VQE repo](https://github.com/mayhallgroup/adapt-vqe). Those files are used for generating Hamiltonians and ansatz pools, so we can guarantee the performance comparision between ADAPT-VQE and ADAPT-GCIM is accurate in code level. We highly appreciate the accessibility of the source code of ADAPT-VQE. 
 
 Due to package upgrades, updates on python imports in those external files must be made to run with the later version of `pyscf` and `openfermion`. We provide the updated version in [our forked repository](https://github.com/Firepanda415/adapt-vqe-for-gcim/tree/master).
+
+## For Downfolded Hamiltonians
+
+Please visit https://github.com/npbauman/DUCC-Hamiltonian-Library for downfolded Hamiltonians. The updated ADAPT-GCIM code is also listed in `Quantum_experiments/ADAPT-GCIM/src` folder in that repository.
