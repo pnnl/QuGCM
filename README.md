@@ -17,5 +17,4 @@ Due to package upgrades, updates on python imports in those external files must 
 
 ## Applications on Downfolded Hamiltonians
 
-In our recent paper [arXiv](https://arxiv.org/abs/2507.01199), we apply ADAPT-GCIM to downfolded Hamiltonians. Please visit https://github.com/npbauman/DUCC-Hamiltonian-Library for downfolded Hamiltonians and all the related experiments. The updated ADAPT-GCIM code is also listed in `Quantum_experiments/ADAPT-GCIM/src` folder in that repository. (The [pull request](https://github.com/npbauman/DUCC-Hamiltonian-Library/pull/1) that contains experimental code and final data is waiting for merging.)
-
+In our recent paper [arXiv](https://arxiv.org/abs/2507.01199), we apply ADAPT-GCIM to downfolded Hamiltonians. Please visit https://github.com/npbauman/DUCC-Hamiltonian-Library for downfolded Hamiltonians and all the related experiments. The updated ADAPT-GCIM code is also contained in `Quantum_experiments/ADAPT-GCIM/src` folder in that repository.
